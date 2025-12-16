@@ -1,37 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PhishGuard Pro - Phishing Detection System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ PhishGuard Pro - Phishing Detection System</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
-        h1 { color: #2c3e50; }
-        .demo-btn { background: #3498db; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        h2 { color: #3498db; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .feature-list { padding-left: 20px; }
+        .feature-list li { margin-bottom: 10px; }
+        code {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            cursor: pointer;
+        }
+        .btn:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
-    <h1>🛡️ PhishGuard Pro</h1>
-    <p>Advanced phishing detection system by Abdulrahman Altayeb</p>
-    
-    <h2>🚀 Features</h2>
-    <ul>
-        <li>URL analysis with 10+ detection methods</li>
-        <li>Risk scoring (0-100)</li>
-        <li>Web interface + CLI tool</li>
-        <li>Real-time detection</li>
-    </ul>
-    
-    <h2>📦 Quick Start</h2>
-    <pre><code>git clone https://github.com/klaus4sen/phishguard-pro.git
+    <div class="container">
+        <h1>🛡️ PhishGuard Pro</h1>
+        <p><strong>Advanced phishing detection system by Abdulrahman Altayeb</strong></p>
+        
+        <h2>🚀 Features</h2>
+        <ul class="feature-list">
+            <li><strong>URL analysis</strong> with 10+ detection methods</li>
+            <li><strong>Risk scoring</strong> (0-100) with clear verdicts</li>
+            <li><strong>Dual interface</strong>: Web app + CLI tool</li>
+            <li><strong>Real-time detection</strong> in &lt; 2 seconds</li>
+            <li><strong>Email analysis</strong> for phishing patterns</li>
+        </ul>
+        
+        <h2>📦 Quick Start</h2>
+        <code>git clone https://github.com/klaus4sen/phishguard-pro.git
 cd phishguard-pro
-python3 app_simple.py</code></pre>
-    
-    <h2>🎥 Demo Video</h2>
-    <!-- Paste your YouTube embed code here -->
-    
-    <h2>🔗 Links</h2>
-    <p>
-        <a href="https://github.com/klaus4sen/phishguard-pro">GitHub Repository</a> | 
-        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-    </p>
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 app_simple.py</code>
+        
+        <h2>🎥 Demo Video</h2>
+        <p><em>Demo video coming soon! Recording the installation and detection process.</em></p>
+        
+        <h2>🔗 Links</h2>
+        <a href="https://github.com/klaus4sen/phishguard-pro" class="btn">GitHub Repository</a>
+        <a href="https://github.com/klaus4sen" class="btn">My GitHub Profile</a>
+        
+        <p style="margin-top: 40px; color: #666; font-size: 0.9em; text-align: center;">
+            &copy; 2025 Abdulrahman Altayeb | MIT Licensed | Built with Python & Flask
+        </p>
+    </div>
 </body>
 </html>
